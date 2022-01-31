@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Projeto 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand px-5" href="index.html">Leandro's Kitchen</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="produtos.html">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comentarios.html">Comentarios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="carrinho.html"><i class="fas fa-shopping-cart"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header> 
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="imagens/logo.jfif" alt="" width="150" height="150">
+        
+            <div class="row g-5">
+                <div class="col-md-5 col-lg-4 order-md-last">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Teu carrinho</span>
+                        <span class="badge bg-primary rounded-pill">2</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Hamburguer</h6>
+                            </div>
+                            <span class="text-muted">5€</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Peixe</h6>
+                            </div>
+                            <span class="text-muted">5€</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Promo code</h6>
+                                <small>VSKI</small>
+                            </div>
+                            <span class="text-success">-GORDURA</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total</span>
+                            <strong>10€</strong>
+                        </li>
+                    </ul>
+        
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Promo code">
+                            <button type="submit" class="btn btn-secondary">Resgatar</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-7 col-lg-8">
+                    <h4 class="mb-3">PAGAR</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <div class="col-sm-6">
+                                <label for="firstName" class="form-label">Primeiro nome</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Primeiro nome é obrigatorio.
+                                </div>
+                            </div>
+        
+                            <div class="col-sm-6">
+                                <label for="lastName" class="form-label">Ultimo nome</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                                <div class="invalid-feedback">
+                                    Ultimo nome é obrigatorio.
+                                </div>
+                            </div>
+        
+                            <div class="col-12">
+                                <label for="address" class="form-label">Morada</label>
+                                <input type="text" class="form-control" id="address" placeholder="1234 Caminho da Rocha" required>
+                                <div class="invalid-feedback">
+                                    Local valido para entrega
+                                </div>
+                            </div>
+        
+        
+                            <div class="col-md-5">
+                                <label for="country" class="form-label">Pais</label>
+                                <select class="form-select" id="country" required>
+                                    <option value="">Choose...</option>
+                                    <option>Portugal</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Pais valido
+                                </div>
+                            </div>
+        
+                            <div class="col-md-4">
+                                <label for="state" class="form-label">Estado</label>
+                                <select class="form-select" id="state" required>
+                                    <option value="">Escolha...</option>
+                                    <option>Madeira</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Escolha um estado valido.
+                                </div>
+                            </div>
+        
+                            <div class="col-md-3">
+                                <label for="zip" class="form-label">Codigo Postal</label>
+                                <input type="text" class="form-control" id="zip" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Codigo postal é necessario
+                                </div>
+                            </div>
+                        </div>
+        
+                        <hr class="my-4">
+        
+                        <h4 class="mb-3">Payment</h4>
+        
+                        <div class="my-3">
+                            <div class="form-check">
+                                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                                <label class="form-check-label" for="credit">Credit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="debit">Debit card</label>
+                            </div>
+                            <div class="form-check">
+                                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                                <label class="form-check-label" for="paypal">PayPal</label>
+                            </div>
+                        </div>
+        
+                        <div class="row gy-3">
+                            <div class="col-md-6">
+                                <label for="cc-name" class="form-label">Name on card</label>
+                                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                                <small class="text-muted">Full name as displayed on card</small>
+                                <div class="invalid-feedback">
+                                    Name on card is required
+                                </div>
+                            </div>
+        
+                            <div class="col-md-6">
+                                <label for="cc-number" class="form-label">Credit card number</label>
+                                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Credit card number is required
+                                </div>
+                            </div>
+        
+                            <div class="col-md-3">
+                                <label for="cc-expiration" class="form-label">Expiration</label>
+                                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Expiration date required
+                                </div>
+                            </div>
+        
+                            <div class="col-md-3">
+                                <label for="cc-cvv" class="form-label">CVV</label>
+                                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                                <div class="invalid-feedback">
+                                    Security code required
+                                </div>
+                            </div>
+                        </div>
+        
+                        <hr class="my-4">
+        
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <br>
+    <br> 
+    <br>
+    <footer class="w-100 py-4 flex-shrink-0">
+        <div class="row justify-content-around mb-0 pt-5 pb-0 ">
+          <div class=" col-12">
+            <div class="row justify-content-center">
+              <div class="col-md-2 col-12 font-italic align-items-center mt-md-3 mt-4">
+                <img src="imagens/logo.png" class="img-fluid mb-1 " style = "width: 70px; height: 70px; border-radius: 10px;">
+                <p class="social mt-md-3 mt-2"> 
+                    <span>
+                        <a href="instagram.com"><i class="fab fa-instagram"></i></a>
+                    </span>
+                    <span>
+                        <a href="facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    </span>
+                    <span>
+                        <a href="twitter.com"><i class="fab fa-twitter"></i></a>
+                    </span> 
+                </p> 
+                <small>Copyright © UMa 2021</small>
+                </div>
+                <div class="col-md-2 col-12 my-sm-0 mt-5">
+                    <ul class="list-unstyled">
+                        <li class="mt-md-3 mt-4 lit">Contatos</li>
+                        <li>Rua das Meninas, nº 69</li>
+                        <li>923 450 642</li>
+                        <li>usuario@hotmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-12 my-sm-0 mt-5">
+                    <ul class="list-unstyled">
+                        <li class="mt-md-3 mt-4 lit">Utilizador</li>
+                        <li>Criar conta</li>
+                        <li>Sign in</li>
+                        <li>iOS app</li>
+                        <li>Android app</li>
+                        <li>Restaurante</li>
+                    </ul>
+                </div>
+                <div class="col-xl-auto col-md-2 col-12 my-sm-0 mt-5">
+                    <ul class="list-unstyled">
+                        <li class="mt-md-2 mt-4 lit">Acerca</li>
+                        <li>Parceiros</li>
+                        <li>Ofertas de emprego</li>
+                        <li>Recursos</li>
+                    </ul>
+                </div>
+                    <div class="col-md-2 col-12 my-sm-0 mt-5">
+                        <ul class="list-unstyled">
+                            <li class="mt-md-3 mt-4 lit">Receitas</li>
+                            <li>Helpdesk</li>
+                            <li>Política de privacidade</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </footer>
+</body>
+</html>
